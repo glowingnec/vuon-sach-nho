@@ -59,10 +59,7 @@ export default function Home() {
         <Reveal>
           <div className="rounded-[28px] border-[1.6px] border-[rgba(0,0,0,0.05)] bg-[#fbf9f4] p-6 sm:p-8 drop-shadow-[0px_2px_4px_rgba(130,85,43,0.08)]">
             <div className="mb-6 flex flex-col items-center text-center">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-[#e8f5e9] px-3.5 py-1 font-['Nunito'] font-bold text-[13px] text-[#2e7d32]">
-                🎬 Video giới thiệu
-              </span>
-              <h2 className="mt-2 font-['Baloo_2'] font-extrabold text-[28px] sm:text-[34px] leading-[40px] text-[#4a9e6d]">
+              <h2 className="font-['Baloo_2'] font-extrabold text-[28px] sm:text-[34px] leading-[40px] text-[#4a9e6d]">
                 Khám phá không gian Vườn Sách Nhỏ
               </h2>
               <p className="mt-1 max-w-[620px] font-['Nunito'] text-[16px] leading-[24px] text-[#8a6a52]">
@@ -72,9 +69,12 @@ export default function Home() {
 
             <div className="relative mx-auto max-w-[860px] overflow-hidden rounded-[20px] border-[2px] border-[rgba(0,0,0,0.08)] bg-[#1e1b18] shadow-[0px_8px_24px_rgba(0,0,0,0.15)] aspect-video flex items-center justify-center">
               <video
+                autoPlay
+                muted
+                loop
                 controls
                 playsInline
-                preload="metadata"
+                preload="auto"
                 className="size-full object-contain"
                 src={`${assetPathPrefix}/intro.mp4`}
               >
@@ -240,10 +240,10 @@ export default function Home() {
             <div className="relative flex-1 rounded-[24px] border-[1.6px] border-[rgba(0,0,0,0.05)] bg-[#fffdf8] px-7 py-6 drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.1),0px_1px_1px_rgba(0,0,0,0.1)]">
               <div className="absolute left-[-9px] top-7 hidden size-6 rotate-45 border-b-[1.6px] border-l-[1.6px] border-[rgba(0,0,0,0.05)] bg-[#fffdf8] md:block" />
               <blockquote className="font-['Baloo_2'] font-bold leading-[41.25px] text-[#6e3410] text-[30px]">
-                “Từ ngày biết đến Vườn Sách Nhỏ, tối nào hai mẹ con cũng có hẹn với một câu chuyện. Con bé giờ mê đọc hơn cả xem tivi”
+                “Từ ngày biết đến Vườn Sách Nhỏ, tối nào hai cha con cũng có hẹn với một câu chuyện. Con bé giờ mê đọc hơn cả xem tivi”
               </blockquote>
               <figcaption className="pt-4 font-['Nunito'] font-bold leading-[24px] text-[#8a6a52] text-[16px]">
-                — Chị NKD, phụ huynh tại Vĩnh Phúc
+                — Anh NKD, phụ huynh tại Vĩnh Phúc
               </figcaption>
             </div>
           </figure>
