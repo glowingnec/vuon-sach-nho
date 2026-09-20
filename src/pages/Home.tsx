@@ -54,6 +54,37 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Introduction Video */}
+      <section className="mx-auto w-full max-w-[1152px] px-5 py-6">
+        <Reveal>
+          <div className="rounded-[28px] border-[1.6px] border-[rgba(0,0,0,0.05)] bg-[#fbf9f4] p-6 sm:p-8 drop-shadow-[0px_2px_4px_rgba(130,85,43,0.08)]">
+            <div className="mb-6 flex flex-col items-center text-center">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[#e8f5e9] px-3.5 py-1 font-['Nunito'] font-bold text-[13px] text-[#2e7d32]">
+                🎬 Video giới thiệu
+              </span>
+              <h2 className="mt-2 font-['Baloo_2'] font-extrabold text-[28px] sm:text-[34px] leading-[40px] text-[#4a9e6d]">
+                Khám phá không gian Vườn Sách Nhỏ
+              </h2>
+              <p className="mt-1 max-w-[620px] font-['Nunito'] text-[16px] leading-[24px] text-[#8a6a52]">
+                Cùng dạo một vòng quanh tiệm sách nhỏ, lắng nghe câu chuyện về niềm đam mê và những cuốn sách chọn lọc cho các bạn nhỏ.
+              </p>
+            </div>
+
+            <div className="relative mx-auto max-w-[860px] overflow-hidden rounded-[20px] border-[2px] border-[rgba(0,0,0,0.08)] bg-[#1e1b18] shadow-[0px_8px_24px_rgba(0,0,0,0.15)] aspect-video flex items-center justify-center">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="size-full object-contain"
+                src={`${assetPathPrefix}/intro.mp4`}
+              >
+                Trình duyệt của bạn không hỗ trợ phát video.
+              </video>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       {/* Best sellers */}
       <section className="mx-auto w-full max-w-[1152px] px-5 py-10">
         <div className="flex flex-wrap items-end justify-between gap-4">
