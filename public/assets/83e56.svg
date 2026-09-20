@@ -1,0 +1,38 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo">
+<path id="Vector" d="M40 77.6C60.7659 77.6 77.6 60.7659 77.6 40C77.6 19.2341 60.7659 2.4 40 2.4C19.2341 2.4 2.4 19.2341 2.4 40C2.4 60.7659 19.2341 77.6 40 77.6Z" fill="#FDF3DF" stroke="#6B4A9E" stroke-width="2.8"/>
+<g id="Group">
+<path id="Vector_2" d="M16 17.6L17.12 20L19.52 21.12L17.12 22.24L16 24.64L14.88 22.24L12.48 21.12L14.88 20L16 17.6Z" fill="#F5C518"/>
+<path id="Vector_3" d="M64 20.8L64.88 22.72L66.8 23.6L64.88 24.48L64 26.4L63.12 24.48L61.2 23.6L63.12 22.72L64 20.8Z" fill="#F5C518"/>
+<path id="Vector_4" d="M59.2 38.08C59.9069 38.08 60.48 37.5069 60.48 36.8C60.48 36.0931 59.9069 35.52 59.2 35.52C58.4931 35.52 57.92 36.0931 57.92 36.8C57.92 37.5069 58.4931 38.08 59.2 38.08Z" fill="#F5C518"/>
+<path id="Vector_5" d="M19.2 36.48C19.9069 36.48 20.48 35.9069 20.48 35.2C20.48 34.4931 19.9069 33.92 19.2 33.92C18.4931 33.92 17.92 34.4931 17.92 35.2C17.92 35.9069 18.4931 36.48 19.2 36.48Z" fill="#F5C518"/>
+</g>
+<g id="Vector_6">
+<path d="M40 41.6V25.6Z" fill="black"/>
+<path d="M40 41.6V25.6" stroke="#4CAF50" stroke-width="2.4" stroke-linecap="round"/>
+</g>
+<path id="Vector_7" d="M40 26C42.2091 26 44 23.6719 44 20.8C44 17.9281 42.2091 15.6 40 15.6C37.7909 15.6 36 17.9281 36 20.8C36 23.6719 37.7909 26 40 26Z" fill="#4CAF50"/>
+<path id="Vector_8" d="M34.4229 30.6802C37.0257 29.4665 38.4091 26.9245 37.5128 25.0024C36.6165 23.0803 33.78 22.5061 31.1771 23.7198C28.5743 24.9335 27.1909 27.4755 28.0872 29.3976C28.9835 31.3197 31.82 31.8939 34.4229 30.6802Z" fill="#66BB6A"/>
+<path id="Vector_9" d="M45.5771 30.6802C48.18 31.8939 51.0165 31.3197 51.9128 29.3976C52.8091 27.4755 51.4257 24.9335 48.8229 23.7198C46.22 22.5061 43.3835 23.0803 42.4872 25.0024C41.5909 26.9245 42.9743 29.4665 45.5771 30.6802Z" fill="#66BB6A"/>
+<path id="Vector_10" d="M40 41.6L22.4 36.8V56L40 60.8V41.6Z" fill="white" stroke="#EF7D2E" stroke-width="2.08" stroke-linejoin="round"/>
+<path id="Vector_11" d="M40 41.6L57.6 36.8V56L40 60.8V41.6Z" fill="white" stroke="#EF7D2E" stroke-width="2.08" stroke-linejoin="round"/>
+<g id="Group_2" opacity="0.8">
+<g id="Vector_12">
+<path d="M26.4 42.4L36.8 45.2Z" fill="black"/>
+<path d="M26.4 42.4L36.8 45.2" stroke="#6B4A9E" stroke-width="0.96" stroke-linecap="round"/>
+</g>
+<g id="Vector_13">
+<path d="M26.4 47.2L36.8 50Z" fill="black"/>
+<path d="M26.4 47.2L36.8 50" stroke="#6B4A9E" stroke-width="0.96" stroke-linecap="round"/>
+</g>
+<g id="Vector_14">
+<path d="M53.6 42.4L43.2 45.2Z" fill="black"/>
+<path d="M53.6 42.4L43.2 45.2" stroke="#6B4A9E" stroke-width="0.96" stroke-linecap="round"/>
+</g>
+<g id="Vector_15">
+<path d="M53.6 47.2L43.2 50Z" fill="black"/>
+<path d="M53.6 47.2L43.2 50" stroke="#6B4A9E" stroke-width="0.96" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</svg>

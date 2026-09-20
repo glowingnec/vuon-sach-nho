@@ -1,0 +1,11 @@
+{
+  "title": "Vườn Sách Nhỏ",
+  "description": "This web application allows users to replicate existing websites with precision, enabling businesses and developers to create accurate digital representations effortlessly.",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

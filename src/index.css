@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&family=Grandstander:wght@900&family=Nunito:wght@400;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-synthesis: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll reveal */
+@keyframes vsn-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: vsn-reveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+/* Gentle float for logo leaf / hero accents */
+@keyframes vsn-float {
+  0%, 100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(-1deg);
+  }
+}
+
+.float-leaf {
+  animation: vsn-float 3.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Card + button micro-interactions */
+.book-card {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.book-card:hover {
+  transform: translateY(-8px);
+}
+.book-card .book-cover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.book-card:hover .book-cover {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 14px 22px 0px rgba(130, 85, 43, 0.45);
+}
+
+.press {
+  transition: transform 0.18s ease, filter 0.18s ease, box-shadow 0.25s ease;
+}
+.press:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+.press:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* Animated hero scene */
+.scene-sun {
+  transform-origin: 150px 30px;
+  animation: vsn-sun-spin 14s linear infinite;
+}
+@keyframes vsn-sun-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scene-star {
+  animation: vsn-twinkle 2.2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.scene-star-2 {
+  animation-delay: 1.1s;
+}
+@keyframes vsn-twinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.scene-leaf {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: vsn-leaf-drift 5s ease-in-out infinite;
+}
+.scene-leaf-2 {
+  animation-duration: 6.5s;
+  animation-delay: 0.8s;
+}
+@keyframes vsn-leaf-drift {
+  0%, 100% {
+    transform: translate(0, 0) rotate(-6deg);
+  }
+  50% {
+    transform: translate(-5px, 7px) rotate(8deg);
+  }
+}
+
+.scene-sprout {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: vsn-sprout-sway 4s ease-in-out infinite;
+}
+@keyframes vsn-sprout-sway {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.scene-page {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: vsn-page-flip 3.6s ease-in-out infinite;
+}
+@keyframes vsn-page-flip {
+  0%, 12% {
+    transform: scaleX(1);
+  }
+  45% {
+    transform: scaleX(-0.92);
+  }
+  60% {
+    transform: scaleX(-0.92);
+  }
+  92%, 100% {
+    transform: scaleX(1);
+  }
+}
+
+/* Notifications: ringing bell + pings */
+.scene-bell {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: vsn-bell-ring 2.4s ease-in-out infinite;
+}
+@keyframes vsn-bell-ring {
+  0%, 60%, 100% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(11deg);
+  }
+  80% {
+    transform: rotate(-9deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+}
+.scene-ping {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: vsn-ping 2.4s ease-out infinite;
+  opacity: 0;
+}
+.scene-ping-2 {
+  animation-delay: 1.2s;
+}
+@keyframes vsn-ping {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.7;
+  }
+  70%, 100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
+
+/* Support: chat bubble + beating heart */
+.scene-bubble {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: vsn-bubble-bob 3.4s ease-in-out infinite;
+}
+@keyframes vsn-bubble-bob {
+  0%, 100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+}
+.scene-heart {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: vsn-heartbeat 1.4s ease-in-out infinite;
+}
+@keyframes vsn-heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.18);
+  }
+  40% {
+    transform: scale(1);
+  }
+  55% {
+    transform: scale(1.12);
+  }
+}
+
+/* All books: stack settle + bouncing bookmark */
+.scene-stack {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: vsn-stack-settle 3.6s ease-in-out infinite;
+}
+@keyframes vsn-stack-settle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(-1.5deg);
+  }
+}
+.scene-bookmark {
+  transform-box: fill-box;
+  transform-origin: top center;
+  animation: vsn-bookmark-bounce 2s ease-in-out infinite;
+}
+@keyframes vsn-bookmark-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-sun,
+  .scene-star,
+  .scene-leaf,
+  .scene-sprout,
+  .scene-page,
+  .scene-bell,
+  .scene-ping,
+  .scene-bubble,
+  .scene-heart,
+  .scene-stack,
+  .scene-bookmark {
+    animation: none;
+  }
+  .scene-ping {
+    opacity: 0;
+  }
+}
+
+/* Nav pills */
+.nav-pill {
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.nav-pill:not([aria-current="page"]):hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #6e3410;
+}
+.nav-pill:hover {
+  transform: translateY(-1px);
+}
+.nav-pill:active {
+  transform: translateY(0) scale(0.97);
+}
+.nav-pill .nav-dot {
+  transition: transform 0.2s ease;
+}
+.nav-pill:hover .nav-dot {
+  transform: scale(1.35);
+}
+
+.cat-card {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+}
+.cat-card:hover {
+  transform: translateY(-4px);
+}
+.cat-card .cat-arrow {
+  transition: transform 0.3s ease;
+}
+.cat-card:hover .cat-arrow {
+  transform: translateX(6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .reveal.is-visible {
+    animation: none;
+    opacity: 1;
+  }
+  .float-leaf {
+    animation: none;
+  }
+  .book-card:hover,
+  .cat-card:hover,
+  .press:hover {
+    transform: none;
+  }
+}
